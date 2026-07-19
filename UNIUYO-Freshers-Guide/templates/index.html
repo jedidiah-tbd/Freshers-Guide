@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIUYO Data Science Freshers Guide</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='dssweb.css')}}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">UNIUYO <span>Data Science</span></div>
+        <p class="faculty">Faculty of Computing</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the department of data science, Freshers!</h1>
+            <p>You made it to the Department of Data Science. Your journey into data analytics starts right here.</p>
+            <a href="#motive" class="btn">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/landingpage.png') }}" alt="UNIUYO Campus Life">
+        </div>
+    </section>
+
+    <section id="motive" class="motive-section">
+        <div class="container">
+            <h2>Life as a fresher</h2>
+            <p class="highlight-text">
+
+University life is exciting, but starting can be overwhelming. Many freshers struggle with registration, locating important offices, and understanding school procedures. Without proper guidance, they often waste valuable time and money.
+Our platform provides a simple, step-by-step guide to help you navigate campus with confidence and complete essential tasks without stress.
+           <div class="motive-box">
+                <h3>Our Motive</h3>
+                <p>We built this platform to clear the confusion. This is your ultimate, step-by-step navigation guide through clearances, payments, and registrations so you can do the needful without the stress.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap-section">
+        <h2>Your Step-by-Step Roadmap</h2>
+        <p class="subtitle">Click on any step below to view the detailed requirements and instructions.</p>
+        
+        <div class="grid-container">
+            <a href="/screening" class="card">
+                <div class="card-icon">📋</div>
+                <h3>1. Faculty Screening</h3>
+                <p>Learn where to go, what original documents to carry, and how to verify your admission status.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+
+            <a href="/fees" class="card">
+                <div class="card-icon">💳</div>
+                <h3>2. School Fees Payment</h3>
+                <p>A breakdown of the portal payment process, generating your RRR, and printing receipts.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+
+            <a href="/four-files" class="card">
+                <div class="card-icon">📁</div>
+                <h3>3. The Four Files</h3>
+                <p>Crucial step. Discover how to arrange your documents into the four mandatory official files.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+
+            <a href="/course-reg" class="card">
+                <div class="card-icon">💻</div>
+                <h3>4. Course Registration</h3>
+                <p>How to select your First Semester Data Science courses online and submit to your level adviser.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+
+        <a href="/roadmap" class="card">
+                <div class="card-icon">🚶🏿‍♂️</div>
+                <h3>5. find your lecture halls</h3>
+                <p>How to locate your lecture halls on campus.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+
+            <a href="/ai" class="card">
+                <div class="card-icon">🤖</div>
+                <h3>6. AI Assistant</h3>
+                <p>How to use the AI assistant for quick answers to your questions.</p>
+                <span class="card-link">View Details &rarr;</span>
+            </a>
+        </div>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Department of Data Science, University of Uyo. Built for Freshers.</p>
+    </footer>
+
+    
+</html>
+</body>
+</html>

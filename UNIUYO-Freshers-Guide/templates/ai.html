@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIUYO AI Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='ai.css') }}">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        UNIUYO <span>Freshers Guide</span>
+    </div>
+
+    <ul>
+
+        <li><a href="/">🏠 Home</a></li>
+
+        <li><a href="/screening">📑 screening</a></li>
+
+        <li><a href="/fees">💳 Fee Payments</a></li>
+
+        <li><a href="/fourfiles">📁 Four Files</a></li>
+
+        <li><a href="/courseregistration">📚 Course Registration</a></li>
+
+        <li><a href="/roadmap">🗺️ Campus Map</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>🤖 UNIUYO AI</h2>
+
+        <p>
+
+            Your intelligent assistant for everything related to the
+            University of Uyo, Faculty of Computing,
+            Department of Data Science.
+
+        </p>
+
+        <hr>
+
+        <h3>Try asking...</h3>
+
+        <button class="suggestion">
+            What documents are required for screening?
+        </button>
+
+        <button class="suggestion">
+            How do I pay school fees?
+        </button>
+
+        <button class="suggestion">
+            What courses do I register?
+        </button>
+
+        <button class="suggestion">
+            Where is the Faculty of Computing?
+        </button>
+
+        <button class="suggestion">
+            Explain the Four Files.
+        </button>
+
+    </aside>
+
+    <!-- Chat Area -->
+
+    <section class="chat-container">
+
+        <div class="chat-header">
+
+            <div class="ai-avatar">
+
+                🤖
+
+            </div>
+
+            <div>
+
+                <h2>UNIUYO AI Assistant</h2>
+
+                <p class="status">
+
+                    ● Online
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Chat Messages -->
+
+        <div id="chat-box">
+
+            <div class="message ai">
+
+                <div class="bubble">
+
+                    👋 Hello!
+
+                    <br><br>
+
+                    I'm your UNIUYO Data Science Assistant.
+
+                    <br><br>
+
+                    I can answer questions about:
+
+                    <ul>
+
+                        <li>Admissions</li>
+
+                        <li>Acceptance Fee</li>
+
+                        <li>School Fees</li>
+
+                        <li>Departmental Screening</li>
+
+                        <li>Course Registration</li>
+
+                        <li>Campus Directions</li>
+
+                        <li>Faculty of Computing</li>
+
+                    </ul>
+
+                    If I can't find the answer on this website,
+                    I'll search for reliable information related to
+                    the University of Uyo.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Typing Indicator -->
+
+        <div id="typing">
+
+            🤖 AI is typing...
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="input-area">
+
+            <textarea
+
+                id="user-input"
+
+                rows="1"
+
+                placeholder="Ask me anything about UNIUYO Data Science..."
+
+            ></textarea>
+
+            <button id="send-btn">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 UNIUYO Data Science Freshers Guide
+
+    </p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+
+</body>
+</html>
